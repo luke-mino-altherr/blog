@@ -127,6 +127,12 @@ a:hover {
     border-top: var(--border-width) solid var(--accent);
 }
 
+.icon-bar {
+    background-color: var(--accent);
+}
+
 footer {
     border-bottom: var(--border-width) solid var(--accent);
 }
+
+
