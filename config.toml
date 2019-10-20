@@ -1,0 +1,65 @@
+baseURL = "http://example.com/"
+languageCode = "en-us"
+title = "min | alt"
+theme = "minimal"
+# disqusShortname = "username" # delete this to disable disqus comments
+googleAnalytics = ""
+
+[params]
+    author = "Luke Mino-Altherr"
+    description = "the ideas, thoughts, and workings of Luke Mino-Altherr."
+    copyright = " "
+    githubUsername = "luke-mino-altherr"
+    accent = "#f2a557"
+    showBorder = true
+    backgroundColor = "#010101"
+    headerFont = "Exo"
+    bodyFont = "PT Sans"
+    #font = "Raleway"
+    #font = "Fira Code"
+    #font = "Lexend Deca"
+    #font = "Darker Grotesque"
+    highlight = true
+    highlightStyle = "default"
+    highlightLanguages = ["go", "haskell", "python", "bash", "swift"]
+    indexBackgroundImage = "https://f002.backblazeb2.com/file/mino-altherr-public/blog/colombia-1623.jpg"
+    aboutBackgroundImage = "https://f002.backblazeb2.com/file/mino-altherr-public/blog/colombia-1597.jpg"
+
+[[menu.main]]
+    url = "/"
+    name = "Home"
+    weight = 1
+
+[[menu.main]]
+    url = "/about/"
+    name = "About"
+    weight = 2
+
+[[menu.main]]
+    url = "/post/"
+    name = "Posts"
+    weight = 3
+
+[[menu.main]]
+    url = "/project/"
+    name = "Projects"
+    weight = 4
+
+# Social icons to be shown on the right-hand side of the navigation bar.
+# The "name" field should match the name of the icon in Font Awesome.
+# The list of available icons can be found at http://fontawesome.io/icons.
+
+[[menu.icon]]
+    url = "mailto:lminoaltherr@gmail.com"
+    name = "envelope-o"
+    weight = 1
+
+[[menu.icon]]
+    url = "https://github.com/luke-mino-altherr/"
+    name = "github"
+    weight = 2
+
+[[menu.icon]]
+    url = "https://www.linkedin.com/in/luke-mino-altherr/"
+    name = "linkedin"
+    weight = 3
