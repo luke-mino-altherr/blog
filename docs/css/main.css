@@ -33,20 +33,17 @@ h2, h4 {
     color: var(--accent);
 }
 
-.nav>li>a:focus, .nav>li>a:hover {
-    background-color: #2C2C2C !important;
-}
-
 /* Homepage */
 
 .intro {
-    transform: translateY(10vh) translateX(-18vh);
+    /*transform: translateY(10vh) translateX(-18vh);*/
     width: 500px;
     opacity: .90;
-    text-align: right
+    /*text-align: right*/
 }
 
 .intro > h1 {
+    padding-top: 10vh;
     font-size: 12vh;
 }
 
@@ -57,6 +54,36 @@ h2, h4 {
 
 .intro > h4 {
     opacity: .6;
+    font-weight: 200;
+    font-size: 1.8vh;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .intro {
+        /*transform: translateY(10vh) translateX(-18vh);*/
+        opacity: .90;
+        width: 80%;
+        margin: auto auto;
+        /*text-align: right*/
+    }
+
+    .intro > h1 {
+        font-size: 4em;
+        padding-top: 1vh;
+    }
+
+    .intro > h2 {
+        font-size: 8em;
+        text-space: 15px;
+    }
+
+    .intro > h4 {
+        opacity: .6;
+        font-weight: 200;
+        /*font-size: .5em;*/
+    }
+
 }
 
 /* Page content */
@@ -126,6 +153,25 @@ a:hover {
 .navbar.navbar-default {
     border-top: var(--border-width) solid var(--accent);
 }
+
+
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: #2C2C2C !important;
+}
+
+.nav {
+    background-color: var(--bg-color);
+    opacity: .85;
+}
+
+.navbar-nav {
+    margin: 0;
+}
+
+.nav>ul {
+    padding-bottom: 0;
+}
+
 
 .icon-bar {
     background-color: var(--accent);
