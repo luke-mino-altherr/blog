@@ -5,7 +5,7 @@
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>min | alt - Openmp</title>
+        <title>min | alt - Let the Monsters Tuck You Into Bed</title>
 
         
 
@@ -80,9 +80,6 @@
  <meta name="generator" content="Hugo 0.54.0" />
 
         
-            <link href="/tags/openmp/index.xml" rel="alternate" type="application/rss&#43;xml" title="min | alt" />
-            <link href="/tags/openmp/index.xml" rel="feed" type="application/rss&#43;xml" title="min | alt" />
-        
 
         
 
@@ -144,39 +141,95 @@
 
 <main>
 
-    <h2>Openmp</h2>
+    <div>
+        <h2>Let the Monsters Tuck You Into Bed</h2>
+    </div>
 
-     <div class="item">
+        <div class="audio">
+            <div id="waveform"></div>
+            <button class="btn btn-xs btn-play" data-action="waveform-play"><i class="fa fa-play"></i>
+<i class="fa fa-pause"></i></button>
+        </div>
+
+        <script>
+            var wavesurfer = WaveSurfer.create({
+                container: document.querySelector('#waveform'),
+                barWidth: 2,
+                barHeight: 1, 
+                barGap: null, 
+                
+                
+                waveColor: '#FFBF7F',
+                progressColor: '#DB8732',
+                height: 50,
+                normalize: true
+            });
+            wavesurfer.song = "https:\/\/f002.backblazeb2.com\/file\/mino-altherr-public\/blog\/audio\/let-the-monsters-tuck-you-into-bed.mp3";
+            fetch("https:\/\/f002.backblazeb2.com\/file\/mino-altherr-public\/blog\/audio\/let-the-monsters-tuck-you-into-bed.json")
+                .then(response => {
+                    if (!response.ok) {
+                            throw new Error("HTTP error " + response.status);
+                        }
+                    return response.json();
+                })
+                .then(peaks => {
+                    console.log('loaded peaks. sample_rate: ' + peaks.sample_rate);
+                    wavesurfer.backend.peaks = peaks.data;
+                })
+                .then(() => {
+                    wavesurfer.drawBuffer();
+                })
+                .catch((e) => {
+                    console.error('error', e);
+                });
+            wavesurfer.loaded = false;
+            wavesurfer.on("play", function () {
+                console.log("play event detected");
+                if (!wavesurfer.loaded) {
+                    wavesurfer.load(wavesurfer.song, wavesurfer.backend.peaks)
+                }
+            });
+            wavesurfer.on("ready", function () {
+                if (!wavesurfer.loaded) {
+                    wavesurfer.loaded = true;
+                    wavesurfer.play();
+                }
+            });
+            console.log(wavesurfer);
+
+            document
+              .querySelector('[data-action="waveform-play"]')
+              .addEventListener('click', function () {
+                  console.log(wavesurfer.loaded);
+                  if (!wavesurfer.loaded) {
+                        wavesurfer.load(wavesurfer.song, wavesurfer.backend.peaks)
+                    }
+                  wavesurfer.playPause();
+              });
+
+        </script>
+
+    <div align="start" class="content"></div>
 
     
     
+    
+
+    
+    
+
+    <div class="post-subheader">
+        <p><span class="subheader">Created: </span>June 13, 2018</p>
         
+
+        <p><span class="subheader">Published: </span>January 12, 2020</p>
         
-            
-        
-    
-    
-
-    
-      
-
-    <h4><a href="https://github.com/luke-mino-altherr/bpm-detector/">BPM Detector</a></h4>
-    <h5>Parallelized versions of Scheirer&#39;s beat detection algorithm</h5>
-    
-<a href="https://min-alt.com/tags/c"><kbd class="item-tag">c</kbd></a>
-
-<a href="https://min-alt.com/tags/openmp"><kbd class="item-tag">openmp</kbd></a>
-
-<a href="https://min-alt.com/tags/mpi"><kbd class="item-tag">mpi</kbd></a>
+ </h5>
+    </div>
 
 
-
-</div>
- 
 
 </main>
-
-
 
         <footer>
             <p class="copyright text-muted"></p>
