@@ -24,6 +24,7 @@ googleAnalytics = ""
     highlightLanguages = ["go", "haskell", "python", "bash", "swift"]
     indexBackgroundImage = "https://f002.backblazeb2.com/file/mino-altherr-public/blog/colombia-1623.jpg"
     aboutBackgroundImage = "https://f002.backblazeb2.com/file/mino-altherr-public/blog/colombia-1597.jpg"
+    dateFormat = "January 2, 2006"
 
 [[menu.main]]
     url = "/"

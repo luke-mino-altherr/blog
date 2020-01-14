@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>min | alt - Sailure To Sun</title>
+
+        
+
+        
+
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT%20Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo">
+
+
+
+
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+<style>
+
+    html body {
+        font-family: 'PT Sans', sans-serif;
+        background-color: #010101;
+    }
+
+    h1, h2, h3, h4, h5 {
+        font-family: 'Exo', sans-serif;
+    }
+
+    :root {
+        --bg-color: #010101;
+        --accent: #f2a557;
+        --border-width:  5px ;
+        --header-font: 'Exo';
+        --body-font: 'PT Sans';
+    }
+
+</style>
+
+
+<link rel="stylesheet" href="https://min-alt.com/css/main.css">
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/go.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/haskell.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/python.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/bash.min.js"></script>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/swift.min.js"></script>
+    
+    <script>hljs.initHighlightingOnLoad();</script>
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+<script>$(document).on('click', function() { $('.collapse').collapse('hide'); })</script>
+ <meta name="generator" content="Hugo 0.54.0" />
+
+        
+
+        
+
+        
+
+        <script src="https://unpkg.com/wavesurfer.js"></script>
+
+        
+
+
+
+
+
+
+    </head>
+
+    <body>
+        
+
+        <nav class="navbar navbar-dark bg-dark navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a class="navbar-brand visible-xs" href="/">min | alt</a>
+                    <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse">
+                    
+                        <ul class="nav navbar-nav">
+                            
+                                <li><a href="/">Home</a></li>
+                            
+                                <li><a href="/about/">About</a></li>
+                            
+                                <li><a href="/post/">Posts</a></li>
+                            
+                                <li><a href="/project/">Projects</a></li>
+                            
+                        </ul>
+                    
+                    
+                        <ul class="nav navbar-nav navbar-right">
+                            
+                                <li class="navbar-icon"><a href="mailto:lminoaltherr@gmail.com"><i class="fa fa-envelope-o"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://github.com/luke-mino-altherr/"><i class="fa fa-github"></i></a></li>
+                            
+                                <li class="navbar-icon"><a href="https://www.linkedin.com/in/luke-mino-altherr/"><i class="fa fa-linkedin"></i></a></li>
+                            
+                        </ul>
+                    
+                </div>
+            </div>
+        </nav>
+
+
+<main>
+
+    <div>
+        <h2>Sailure To Sun</h2>
+    </div>
+
+        <div class="audio">
+            <div id="waveform"></div>
+            <button class="btn btn-xs btn-play" data-action="waveform-play"><i class="fa fa-play"></i>
+<i class="fa fa-pause"></i></button>
+        </div>
+
+        <script>
+            var wavesurfer = WaveSurfer.create({
+                container: document.querySelector('#waveform'),
+                barWidth: 2,
+                barHeight: 1, 
+                barGap: null, 
+                
+                
+                waveColor: '#FFBF7F',
+                progressColor: '#DB8732',
+                height: 50,
+                normalize: true
+            });
+            wavesurfer.song = "https:\/\/f002.backblazeb2.com\/file\/mino-altherr-public\/blog\/audio\/sailure-to-sun.mp3";
+            fetch("https:\/\/f002.backblazeb2.com\/file\/mino-altherr-public\/blog\/audio\/sailure-to-sun.json")
+                .then(response => {
+                    if (!response.ok) {
+                            throw new Error("HTTP error " + response.status);
+                        }
+                    return response.json();
+                })
+                .then(peaks => {
+                    console.log('loaded peaks. sample_rate: ' + peaks.sample_rate);
+                    wavesurfer.backend.peaks = peaks.data;
+                })
+                .then(() => {
+                    wavesurfer.drawBuffer();
+                })
+                .catch((e) => {
+                    console.error('error', e);
+                });
+            wavesurfer.loaded = false;
+            wavesurfer.on("play", function () {
+                console.log("play event detected");
+                if (!wavesurfer.loaded) {
+                    wavesurfer.load(wavesurfer.song, wavesurfer.backend.peaks)
+                }
+            });
+            wavesurfer.on("ready", function () {
+                if (!wavesurfer.loaded) {
+                    wavesurfer.loaded = true;
+                    wavesurfer.play();
+                }
+            });
+            console.log(wavesurfer);
+
+            document
+              .querySelector('[data-action="waveform-play"]')
+              .addEventListener('click', function () {
+                  console.log(wavesurfer.loaded);
+                  if (!wavesurfer.loaded) {
+                        wavesurfer.load(wavesurfer.song, wavesurfer.backend.peaks)
+                    }
+                  wavesurfer.playPause();
+              });
+
+        </script>
+
+    <div align="start" class="content"></div>
+
+    
+    
+    
+
+    
+    
+
+    <div class="post-subheader">
+        <p><span class="subheader">Created: </span>November 8, 2019</p>
+        
+
+        <p><span class="subheader">Published: </span>January 12, 2020</p>
+        
+ </h5>
+    </div>
+
+
+
+</main>
+
+        <footer>
+            <p class="copyright text-muted"></p>
+        </footer>
+
+        
+
+        
+    </body>
+
+</html>
+
