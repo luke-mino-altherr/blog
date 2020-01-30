@@ -21,7 +21,7 @@ googleAnalytics = ""
     #font = "Darker Grotesque"
     highlight = true
     highlightStyle = "default"
-    highlightLanguages = ["go", "haskell", "python", "bash", "swift"]
+    highlightLanguages = ["python", "bash"]
     indexBackgroundImage = "https://f002.backblazeb2.com/file/mino-altherr-public/blog/colombia-1623.jpg"
     aboutBackgroundImage = "https://f002.backblazeb2.com/file/mino-altherr-public/blog/colombia-1597.jpg"
     dateFormat = "January 2, 2006"
@@ -32,13 +32,13 @@ googleAnalytics = ""
     weight = 1
 
 [[menu.main]]
-    url = "/about/"
-    name = "About"
+    url = "/sounds/"
+    name = "Sounds"
     weight = 2
 
 [[menu.main]]
-    url = "/post/"
-    name = "Posts"
+    url = "/sights/"
+    name = "Sights"
     weight = 3
 
 [[menu.main]]
