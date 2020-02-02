@@ -12,26 +12,81 @@
   
   <url>
     <loc>https://min-alt.com/post/</loc>
+  </url>
+  
+  <url>
+    <loc>https://min-alt.com/sight/jackson/</loc>
+    <lastmod>2020-01-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://min-alt.com/sound/sailure-to-sun/</loc>
     <lastmod>2019-11-08T00:00:00-05:00</lastmod>
   </url>
   
   <url>
-    <loc>https://min-alt.com/post/sailure-to-sun/</loc>
-    <lastmod>2019-11-08T00:00:00-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://min-alt.com/post/hear-me-out/</loc>
+    <loc>https://min-alt.com/sight/jackson/hills/hill1/</loc>
     <lastmod>2019-10-14T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://min-alt.com/post/let-the-monsters-tuck-you-into-bed/</loc>
+    <loc>https://min-alt.com/sight/jackson/hills/hill2/</loc>
+    <lastmod>2019-10-14T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://min-alt.com/sight/jackson/hills/hill3/</loc>
+    <lastmod>2019-10-14T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://min-alt.com/sight/jackson/trees/tree1/</loc>
+    <lastmod>2019-10-14T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://min-alt.com/sight/jackson/trees/tree2/</loc>
+    <lastmod>2019-10-14T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://min-alt.com/sight/jackson/trees/tree3/</loc>
+    <lastmod>2019-10-14T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://min-alt.com/sight/jackson/trees/tree4/</loc>
+    <lastmod>2019-10-14T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://min-alt.com/sight/jackson/trees/tree5/</loc>
+    <lastmod>2019-10-14T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://min-alt.com/sight/jackson/trees/tree6/</loc>
+    <lastmod>2019-10-14T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://min-alt.com/sound/hear-me-out/</loc>
+    <lastmod>2019-10-14T00:00:00-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://min-alt.com/sound/let-the-monsters-tuck-you-into-bed/</loc>
     <lastmod>2018-06-13T00:00:00-04:00</lastmod>
   </url>
   
   <url>
-    <loc>https://min-alt.com/about/</loc>
+    <loc>https://min-alt.com/sight/jackson/hills/</loc>
+    <lastmod>2018-06-13T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://min-alt.com/sight/jackson/trees/</loc>
+    <lastmod>2018-06-13T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -66,6 +121,16 @@
   
   <url>
     <loc>https://min-alt.com/tags/react/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://min-alt.com/sight/</loc>
+  </url>
+  
+  <url>
+    <loc>https://min-alt.com/sound/</loc>
+    <lastmod>2019-11-08T00:00:00-05:00</lastmod>
     <priority>0</priority>
   </url>
   
