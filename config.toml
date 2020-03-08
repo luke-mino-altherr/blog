@@ -32,12 +32,12 @@ googleAnalytics = ""
     weight = 1
 
 [[menu.main]]
-    url = "/sounds/"
+    url = "/sound/"
     name = "Sounds"
     weight = 2
 
 [[menu.main]]
-    url = "/sights/"
+    url = "/sight/"
     name = "Sights"
     weight = 3
 

@@ -253,6 +253,8 @@ footer {
 
 .picture-container {
     width: 80vw;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 
 .image-nav, button.image-nav:hover, button.image-nav:active {
